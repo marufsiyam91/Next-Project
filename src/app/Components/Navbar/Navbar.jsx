@@ -51,8 +51,10 @@ const Navbar = () => {
         </div>
       </div>
       {isClicked && (
-        <div className="md:hidden absolute end-0 sm:w-[320px] h-[calc(100vh-80px)] bg-slate-500 w-full duration-500">
-          
+        <div className="md:hidden absolute end-0 sm:w-[320px] h-[calc(100vh-80px)] bg-slate-500 w-full duration-500 flex flex-col justify-evenly">
+          <div className="px-4">
+            <h1 className="text-4xl">Logo</h1>
+          </div>
           <ul className=" flex flex-col ">
             <Link
               className="text-xl py-2 px-4 border-b hover:text-slate-50 duration-500"
@@ -79,6 +81,12 @@ const Navbar = () => {
               Blog
             </Link>
           </ul>
+          <div className="px-4">
+            <h2>Contact info</h2>
+            <p>Dhaka, keranigonj, Abdullahpur</p>
+            <p>+00 01826096711</p>
+            <p>marfusiyam9123@gmail.com</p>
+          </div>
         </div>
       )}
     </nav>
